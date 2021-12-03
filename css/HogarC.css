@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: white;
+}
+.color1{
+    color: yellow;
+}
+.color2{
+    color: blue;
+}
+.color3{
+    color: red;
+}
+/*Barra de Navegación*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    z-index: 2;
+    box-shadow: 0px 2px 5px 4px #0E2E50;
+}
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.logo h1 i{
+    color: black;
+}
+.menu{
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #00C194;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu nav ul li a{
+    color: black;
+    font-size: 18px;
+    transition: color 300ms;
+}
+.menu nav ul li a:hover{
+    color: #00C194;
+}
+.menu nav ul li a i{
+    display: none;
+}
+.menu .text-menu-selected{
+    color: #00C194;
+}
+.menu .btn-function{
+    margin: 0px -19px;
+    display: block;
+    width: 140px;
+    height: 35px;
+    border: 2px solid #00C194;
+    background-color: transparent;
+    border-radius: 6px;
+    color: #00C194;
+    cursor: pointer;
+    transition: .1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu .btn-function:before{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    border-radius: 6px;
+    transition: 300ms;
+}
+.menu .btn-function:hover{
+    border: 2px solid #00C194;
+    color: black;
+    background-color: #00C194;
+}
+.menu .btn-function:before:hover{
+    height: 0px;
+}
+.menu .btn{
+    display: block;
+    width: 140px;
+    height: 35px;
+    border: 2px solid #00C194;
+    background-color: transparent;
+    border-radius: 7px;
+    color: #00C194;
+    cursor: pointer;
+    transition: .1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu .btn:before{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    border-radius: 6px;
+    transition: 300ms;
+}
+.menu .btn:hover{
+    border: 2px solid #00C194;
+    color: black;
+    background-color: #00C194;
+}
+.menu .btn:hover:before{
+    height: 0px;
+}
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #eeeeeefa;
+    border-radius: 100%;
+    color: #00C194;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00C194;
+    display: none;
+}
+#icon-menu:hover{
+    background: #0E2E50;
+    border: 1px solid #0E2E50;
+}
+#icon-menu i{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Portada*/
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: block;
+    margin-top: 80px;
+    background-image: url(../img/pexels-max-vakhtbovych-6890405.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(56, 47, 39, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.container-info-cover h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.container-cover-filtro select{
+    position: relative;
+    display: block;
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #3C3C3C;
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: #00C194;
+}
+.container-cover-filtro form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container-cover-filtro form input{
+    position: relative;
+    display: block;
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #3C3C3C;
+    background-color: white;
+    color: #00C194;
+}
+.container-cover-filtro form button{
+    position: relative;
+    display: block;
+    width: 240px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #3C3C3C;
+    background-color: #00C194;
+    color: white;
+}
+.container-info-cover h1 i{
+    color: black;
+}
+.container-info-cover p{
+    color: #00C194;
+    font-size: 20px;
+    font-weight: 300;
+}
+/*Cards o diapositivas*/
+.container-titulo{
+    max-width: 1100px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.container-titulo p{
+    margin-top: 30px;
+    color: #00C194;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+.container-titulo h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+}
+.container_card{
+    max-width: 1100px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 265px;
+    position: relative;
+    margin: 35px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #eff3f5;
+    border-radius: 6px;
+    height: 400px;
+}
+.icon{
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .info__description{
+    text-align: center;
+    margin: 0px 20px;
+}
+.card .info__description h5{
+    font-size: 25px;
+    padding: 20px;
+}
+.card .info__description p{
+    font-size: 15px;
+}
+/*Mision - Vision*/
+.container-vision-mision{
+    background: #0E2E50;
+    color: #00C194;
+    width: 100%;
+    height: 20px 40px;
+    padding: 40px;
+}
+.container-vision-mision .container-mision{
+    text-align: left;
+    margin: auto;
+}
+.container-vision-mision .container-vision{
+    text-align: right;
+    margin: auto;
+}
+.container-vision h4, .container-mision h4{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+.container-mision p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.container-vision p {
+    font-size: 15px;
+}
+/*Pie de Pagína*/
+.container-footer{
+    width: 100%;
+    height: 20px 40px;
+}
+.container-footer footer{
+    width: 100%;
+    background: #3C3C3C;
+    color: white;
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+}
+.container-body-contac{
+    display: flex;
+    justify-content: space-between;
+}
+.column1{
+    max-width: 400px;
+}
+.column1 h1{
+    font-size: 22px;
+}
+.column1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.column2{
+    max-width: 400px;
+}
+.column2 h1{
+    font-size: 22px;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+.row a img{
+    width: 36px;
+    height: 36px;
+}
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+.row label a{
+    color: #C7C7C7;
+}
+.column3{
+    max-width: 400px;
+}
+.column3 h1{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+.row2 ul li label{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.container-footer-end{
+    width: 100%;
+    color: #C7C7C7;
+    background: black;
+}
+.footer{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.copyright{
+    color: #C7C7C7;
+}
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+.row2 ul{
+    list-style: none;
+}
+/*Responsive Desing Menu - adaptable a dispositivos Móviles*/
+@media screen and (max-width: 950px){
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+    .move-container-all{
+        transform: translateX(300px);
+    }
+    .menu{
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 83px;
+        left: 0;
+        background-color: white;
+        color: #00C194;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 4px 0 5px 4px #0E2E50;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .show-lateral {
+        width: 300px;
+        transform: translateX(0px);
+    }
+    .menu nav ul{
+        flex-direction: column;
+    }
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+    .menu-selected:before{
+        width: 0;
+    }
+    .menu nav ul li a{
+        margin-top: 40px;
+        color: #0E2E50;
+    }
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 12px;
+        color: #0E2E50;
+    }
+    .menu .btn{
+        width: 160px;
+        height: 35px;
+        margin: 3px 0;
+    }
+    .menu .btn-function{
+        width: 160px;
+        height: 35px;
+        margin: 3px 0;
+    }
+    #icon-menu{
+        display: flex;
+    }
+}
+/*Responsive Desing Pie de Pagina*/
+@media screen and (max-width: 1000px){
+    .container-cover{
+        height: 550px;
+    }
+    .container-cover-filtro form{
+        flex-direction: column;
+    }
+    .container-body-contac{
+        flex-wrap: wrap;
+    }
+    .column1{
+        max-width: 100%;
+    }
+    .column2, .column3{
+        margin-top: 40px;
+    }
+}

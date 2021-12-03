@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>Hogar Colombia</title>
+    <!--Llamamos al archivo style1.css dentro de la carpeta css-->
+    <link rel="stylesheet" href="css/HogarC.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <!--Barra de Navegación/Inicio de Pagina-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1><i>Hogar</i><b class="color1">Co</b><b class="color2">lom</b><b class="color3">bia</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a class="text-menu-selected" href="HogarC.html"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="#"> <i class="fas fa-building"></i> Inmuebles</a></li>
+                        <li><a href="#"> <i class="fas fa-city"></i> Tipos Inmuebles</a></li>
+                        <li><a></a></li>
+                        <li><a href="Registro.html" class="btn btn-function"> <i class="far fa-user"></i>Registrarme</a></li>
+
+                        <li><a href="#" class="btn btn-function"> <i class="fas fa-user"></i>Ingresar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars icon"></i>
+        </div>
+    </header>
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+        <div class="container-cover">
+            <div class="container-info-cover">
+                <h1>¡Bienvenido A <i>Hogar</i><b class="color1">Co</b><b class="color2">lom</b><b class="color3">bia</b>!</h1>
+                <p>¡Tus sueños se harán realidad!</p><br>
+                <p>Te ayudaremos a encontrar</p>
+                <h1>Tu Inmueble de tus Sueños</h1>
+                <div class="container-cover-filtro">
+                    <form>
+                        <select>
+                            <option selected>Tipo de Oferta</option>
+                            <option value="1">Venta</option>
+                            <option value="2">Alquiler</option>
+                        </select>
+                        <input type="search" placeholder="Ciudad" aria-label="Ciudad">
+                        <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Cards de Servicios-->
+        <div class="body__page">
+            <div class="container-titulo">
+                <p>¿COMO PODEMOS AYUDARTE?</p>
+                <h1>Nuestros Servicios</h1>
+            </div>
+            <div class="container_card">
+                <div class="card">
+                    <div class="icon">
+                        <img src="/img/busqueda-casa.svg">
+                    </div>
+                    <div class="info__description">
+                        <h5>Encuentra tu Inmueble Ideal</h5>
+                        <p>Ponemos a tu disposición las mejores herramientas para que encontrar un Inmueble sea tan fácil como caminar.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="/img/venderCasa.svg">
+                    </div>
+                    <div class="info__description">
+                        <h5>Vende o Alquila Inmuebles</h5>
+                        <p>Si eres una Inmobiliaria, puedes ofrecer las propiedades de tu Empresa y llegar a miles de clientes potenciales.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="/img/busqueda-casa.svg">
+                    </div>
+                    <div class="info__description">
+                        <h5>Compra o Arrienda Inmuebles</h5>
+                        <p>Si eres una persona que quiere buscar Inmuebles, esta en el lugar correcto, aqui podras mirar y buscar diversos Inmuebles deacuerdo a unos Estandares o Características que te haran la busqueda mucho más fácil.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Mision y Vision-->
+            <div class="container-vision-mision">
+                <div class="container-mision">
+                    <h4>Misión</h4>
+                    <p>Nuestro Objetivo es poder ayudar a las personas a buscar y encontrar ese inmueble que han estado buscando y que cumplan con sus estandares deseados, aparte de eso También queremos ayudar a las Inmobiliarias que estan iniciando y a las Personas que quieren vender y/o alquilar sus inmuebles o las Inmobiliarias que quieren ampliar la venta y/o alquiler de sus inmuebles en este Sitio Web.</p>
+                </div>
+                <div class="container-vision">
+                    <h4>Visión</h4>
+                    <p>Para el 2025 queremos que esta Aplicación Web y nuestra Inmobiliaria <i>Hogar</i><b class="color1">Co</b><b class="color2">lom</b><b class="color3">bia</b> sea reconocida a nivel Nacional e Internacional.</p>
+                </div>
+            </div>
+        </div>
+        <!--Pie de Pagina-->
+        <div class="container-footer">
+            <footer>
+                <div class="container-footer-all">
+                    <div class="container-body-contac">
+                        <div class="column1">
+                            <h1>¿Quienes Somos?</h1>
+                            <p>Somos <i>Hogar</i><b class="color1">Co</b><b class="color2">lom</b><b class="color3">bia</b>,</p>
+                            <p>Una Empresa que te ayudara a buscar el inmuble que has estado buscando y deseando todo este tiempo "<i><b>¡El Inmueble de Tus Sueños!</b></i>".</p>
+                            <p>También somos la Empresa preferida por algunos Colombianos y que por años hemos estado acompañando a las personas y familias en el proceso de buscar y adquirir su Inmueble de sus Sueños.</p>
+                        </div>
+                        <div class="column2">
+                            <h1>Redes Sociales</h1>
+                            <div class="row">
+                                <a href="#"><img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-facebook-icon-redes-sociales.png"></a>
+                                <label><a href="#">Siguenos en Facebook</a></label>
+                            </div>
+                            <div class="row">
+                                <a href="#"><img src="/img/logotwitter.png"></a>
+                                <label><a href="#">Siguenos en Twitter</a></label>
+                            </div>
+                            <div class="row">
+                                <a href="#"><img src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png"></a>
+                                <label><a href="#">Siguenos en Instagram</a></label>
+                            </div>
+                            <div class="row">
+                                <a href="#"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c52e.png"></a>
+                                <label><a href="#">Siguenos en Pinterest</a></label>
+                            </div>
+                            <div class="row">
+                                <a href="https://github.com/juancamiloortizg/proyecto-inmobiliaria.git"><img src="/img/5847f98fcef1014c0b5e48c0.png"></a>
+                                <label><a href="https://github.com/juancamiloortizg/proyecto-inmobiliaria.git">Github</a></label>
+                            </div>
+                        </div>
+                        <div class="column3">
+                            <h1>Contactos</h1>
+                            <div class="row2">
+                                <img src="https://cdn.icon-icons.com/icons2/520/PNG/512/Building_icon-icons.com_52242.png">
+                                <ul>
+                                    <li><label>Dirección de Misión Tic</label></li>
+                                </ul>
+                            </div>
+                            <div class="row2">
+                                <img src="http://assets.stickpng.com/thumbs/5a452601546ddca7e1fcbc87.png">
+                                <ul>
+                                    <li><label>+57 3026082039</label></li>
+                                </ul>
+                            </div>
+                            <div class="row2">
+                                <img src="http://assets.stickpng.com/thumbs/5847fafdcef1014c0b5e48ce.png">
+                                <ul>
+                                    <li><label>desarrollo.web.juan.camilo@gmail.com</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-footer-end">
+                    <div class="footer">
+                        <div class="copyright">
+                            @ 2021 Todos los Derechos Reservador | <i>Hogar</i><b class="color1">Co</b><b class="color2">lom</b><b class="color3">bia</b>
+                        </div>
+                        <div class="information">
+                            <a href="#">Informacion Empresa</a> | <a href="#">Privación y Política</a> | <a href="#">Terminos y Condiciones</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--Llamamos al archivo scripts.js dentro de la carpeta js-->
+    <script src="/js/HogarC.js"></script>
+</body>
+</html>
